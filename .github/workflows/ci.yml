@@ -32,6 +32,11 @@ jobs:
       - name: Build the application
         run: npm run build
 
+      - name: Configure Git author
+        run: |
+          git config --global user.name "Justin Hu"
+          git config --global user.email "jnelite85@gmail.com"
+
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push'
         run: npm run deploy

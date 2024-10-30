@@ -5,7 +5,6 @@ import './App.css';
 
 function App() {
   const [count, setCount] = useState(0);
-  const [isError, setIsError] = useState(false);
 
   return (
     <>
@@ -29,7 +28,6 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <button onClick={() => setIsError(true)}>Throw error {isError}</button>
     </>
   );
 }

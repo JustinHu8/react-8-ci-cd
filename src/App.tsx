@@ -5,6 +5,7 @@ import './App.css';
 
 function App() {
   const [count, setCount] = useState(0);
+  const notUsed = 'This is not used';
 
   return (
     <>
